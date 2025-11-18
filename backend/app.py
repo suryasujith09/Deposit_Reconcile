@@ -9,6 +9,7 @@ app = Flask(__name__, static_folder="static")
 CORS(app)
 app.config["UPLOAD_FOLDER"] = "uploads"
 os.makedirs(app.config["UPLOAD_FOLDER"], exist_ok=True)
+root_dir = os.path.join(os.getcwd(), "backend", "static")
 
 # === Load API Keys ===
 load_dotenv()
