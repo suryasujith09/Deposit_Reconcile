@@ -6,7 +6,7 @@ from main import process_deposit_slip
 
 # === Flask Setup ===
 app = Flask(__name__, static_folder="static")
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "*"}})
 app.config["UPLOAD_FOLDER"] = "uploads"
 os.makedirs(app.config["UPLOAD_FOLDER"], exist_ok=True)
 root_dir = os.path.join(os.getcwd(), "backend", "static")
