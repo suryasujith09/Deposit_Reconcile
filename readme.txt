@@ -1,4 +1,4 @@
-This is Sagar-
+This is Surya-
 Create a venv
 After Activating it use the following command in  your terminal
 pip install -m requirements.txt
