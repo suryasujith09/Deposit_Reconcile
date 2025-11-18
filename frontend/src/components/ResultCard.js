@@ -1,5 +1,5 @@
 import React from "react";
-import { FaUser, FaRupeeSign, FaPhone, FaCalendarAlt, FaUniversity, FaSignature } from "react-icons/fa";
+import { FaUser, FaRupeeSign, FaPhone, FaCalendarAlt, FaUniversity } from "react-icons/fa";
 
 function ResultCard({ data }) {
   const fields = [
