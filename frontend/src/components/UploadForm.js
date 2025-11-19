@@ -23,7 +23,7 @@ function UploadForm({ setResultData }) {
 
     try {
       setLoading(true);
-      const response = await axios.post("https://deposit-reconcile-1.onrender.com/upload", formData, {
+      const response = await axios.post("https://deposit-reconcile-1.onrender.com/api/upload", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
 
